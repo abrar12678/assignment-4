@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Tracker - Rejected</title>
+
+    <!-- Tailwind CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="cssintelisense.css">
+</head>
+<body>
+    <section class="container mx-auto mx-4 my-10">
+        <h2 class="font-bold text-3xl mb-6">Job Application Tracker</h2>
+        <div class="cards grid grid-cols-1 md:grid-cols-3 gap-6"> 
+            <div class="bg-white p-6 rounded-xl shadow">
+                <p class="font-medium text-[14px]">Total</p>
+                <h2 id="total-count" class="font-bold text-2xl">8</h2>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow">
+                <p class="font-medium text-[14px]">Interview</p>
+                <h2 id="interview-count" class="font-bold text-2xl text-green-500">0</h2>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow">
+                <p class="font-medium text-[14px]">Rejected</p>
+                <h2 id="rejected-count" class="font-bold text-2xl text-red-500">0</h2>
+            </div>
+        </div>
+    </section>
+    <section class="container mx-auto">
+        <div class="justify-between flex mb-4">
+            <h2 class="font-semibold text-[20px]">Rejected Jobs</h2>
+            <p id="rejected-jobs-count" class="font-medium text-[16px] text-[#323B49]">0 of 8 jobs</p>
+        </div>
+        <div class="buttons mb-[14px]">
+            <a href="index.html"><button class="btn w-[80px] h-[32px]">All</button></a>
+            <a href="interview.html"><button class="btn w-[80px] h-[32px]">Interview</button></a>
+            <button id="rejected-btn" class="btn w-[80px] h-[32px] bg-red-500 text-white">Rejected</button>
+        </div>
+        <div id="jobs-container" class="cards">
+            
+        </div>
+    </section>
+
+    <script src="rejected.js"></script>
+</body>
+</html>
